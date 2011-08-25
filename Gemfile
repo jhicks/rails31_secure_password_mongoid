@@ -17,6 +17,9 @@ end
 
 gem 'jquery-rails'
 
+gem 'mongoid', '~> 2.1'
+gem 'bson_ext', '~> 1.3'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
