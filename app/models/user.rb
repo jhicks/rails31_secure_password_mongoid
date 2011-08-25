@@ -8,4 +8,8 @@ class User
 
   attr_accessible :email
   attr_protected :password_digest
+
+  validates_presence_of :email
+  validates_presence_of :password, :on => :create
+  validates_presence_of :password_confirmation, :if => :password
 end
