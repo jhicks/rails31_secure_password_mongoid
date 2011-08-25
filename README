@@ -1,0 +1,7 @@
+Build authentication using Rails 3.1 ActiveModel::SecurePassword using MongoDB + Mongoid.  Following Ryan Bate's Rails Cast on authentication in Rails 3.1
+
+Links 
+* http://railscasts.com/episodes/270-authentication-in-rails-3-1
+* https://github.com/rails/rails/blob/master/activemodel/lib/active_model/secure_password.rb
+* http://mongoid.org/
+* http://www.mongodb.org
