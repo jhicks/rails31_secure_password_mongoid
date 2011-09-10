@@ -1,0 +1,30 @@
+<h1>Sign Up</h1>
+
+<% if @user.errors.any? %>
+  <div class="error_messages">
+    <h2>Form is invalid</h2>
+    <ul>
+      <% for message in @user.errors.full_messages %>
+        <li><%= message %>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_for @user, :url => :signup do |f| %>
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :passwod_confirmation %>
+    <%= f.password_field :password_confirmation %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
