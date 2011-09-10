@@ -6,7 +6,8 @@ class RegistrationController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      redirect_to root_url :notice => "Signed Up!"
+      session[:user_id] = user.id
+      redirect_to members_root_url :notice => "Signed Up!"
     else
       render "new"
     end

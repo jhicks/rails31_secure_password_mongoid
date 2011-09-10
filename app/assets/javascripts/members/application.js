@@ -6,6 +6,4 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require ./pages
-//= require ./registration
-//= require ./sessions
+//= require_tree .
